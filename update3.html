@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <script src="updated.js" type="text/javascript"></script>
+  <script src="countrytest.js" type="text/javascript"></script>
+  <!-- <link href="finalproject.js" rel="finalproject" type="text/js"> -->
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <meta name="viewport" content="width=device-width, intial-scale=1">
+
+</head>
+
+<div>
+<body onload = "openCity(event, 'Homepage')">
+<div id="TheWorldNews" class= "tab">
+<h2 style="text-align: center;"> The World News</h2>
+</div>
+
+<div id="Tabs">
+<div class="tab">
+<button class="tablinks" onclick="openCity(event, 'Homepage')">Home Page</button>
+<button class="tablinks" onclick="openCity(event, 'LocalNews')">Local News</button>
+<button class="tablinks" onclick="openCity(event, 'GlobalNews')">Global News</button>
+<button class="tablinks" onclick="openCity(event, 'Weather')">Weather</button>
+<button class="tablinks" onclick="openCity(event, 'Entertainment')">Entertainment</button>
+<button class="tablinks" onclick="openCity(event, 'AboutUs')">About Us</button>
+</div>
+
+<div id="Homepage" class="tabcontent">
+  <center><h3 style="font-family: Garmond, cursive;"> Home Page </h3></center>
+  <p>HIGHLIGHTS (TOP TRENDS):
+  <button id="btn"onclick="load(); loaduk(); loadaus(); laodindia();">
+    <script type="text/javascript">
+    document.getElementById("btn").click();
+    </script>
+</p>
+</div>
+
+<div id="LocalNews" class="tabcontent">
+  <center><h3 style="font-family: Garmond, cursive;">Local News</h3></center>
+  <p>Where you get the news in your area.
+    <div id="demo">
+    <button onclick="load()">Get News</button>
+    </div>
+
+  </p>
+</div>
+
+<div id="GlobalNews" class="tabcontent">
+  <center><h3 style="font-family: Garmond, cursive;">Global News</h3></center>
+  <p>What is going around the map.
+    <!-- <div id="demo1">
+    <button onclick="loadglobal()">Get News</button>
+    </div> -->
+
+  </p>
+    <button onclick="loaduk()">United Kingdom </button>
+    <p></p>
+    <button onclick="loadaus()">Australia </button>
+    <p></p>
+    <button onclick="loadindia()">India</button>
+    <p></p>
+    <button onclick="loadmx()">Mexico</button>
+    <p></p>
+    <button onclick="loadsa()">South Africa</button>
+    <p></p>
+    <button onclick="loadca()">Canada</button>
+    <p></p>
+    <button onclick="loadcn()">China</button>
+    <p></p>
+    <button onclick="loadfr()">France</button>
+    <p></p>
+    <button onclick="loadil()">Israel</button>
+</div>
+
+<div id="Weather" class="tabcontent">
+    <center><h3 style="font-family: Garmond, cursive;">Weather</h3></center>
+    <p>How is the climate today?</p>
+
+    <!-- new york -->
+    <p>
+      <a class="weatherwidget-io" href="https://forecast7.com/en/40d71n74d01/new-york/?unit=us" data-label_1="NEW YORK" data-label_2="WEATHER" data-theme="original" >NEW YORK WEATHER</a>
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
+    </p>
+    <!-- paris -->
+    <p>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/48d862d35/paris/?unit=us" data-label_1="PARIS" data-label_2="WEATHER" data-theme="original" >PARIS WEATHER</a>
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
+    </p>
+    <!-- sydny -->
+    <p>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/n33d87151d21/sydney/?unit=us" data-label_1="SYDNEY" data-label_2="WEATHER" data-theme="original" >SYDNEY WEATHER</a>
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
+    </p>
+    <!-- california  -->
+    <p>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/36d78n119d42/california/?unit=us" data-label_1="CALIFORNIA" data-label_2="WEATHER" data-theme="original" >CALIFORNIA WEATHER</a>
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
+    </p>
+    <!-- barcelona  -->
+    <p>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/41d392d17/barcelona/?unit=us" data-label_1="BARCELONA" data-label_2="WEATHER" data-theme="original" >BARCELONA WEATHER</a>
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
+    </p>
+    <!-- hong kong  -->
+    <p>
+      <a class="weatherwidget-io" href="https://forecast7.com/en/22d40114d11/hong-kong/?unit=us" data-label_1="HONG KONG" data-label_2="WEATHER" data-theme="original" >HONG KONG WEATHER</a>
+      <script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+      </script>
+    </p>
+    <!-- tokyo -->
+    <p>
+      <a class="weatherwidget-io" href="https://forecast7.com/en/35d69139d69/tokyo/?unit=us" data-label_1="TOKYO" data-label_2="WEATHER" data-theme="original" >TOKYO WEATHER</a>
+      <script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+      </script>
+    </p>
+</div>
+
+<div id="Entertainment" class="tabcontent">
+  <center><h3 style="font-family: Garmond, cursive;">Entertainment</h3></center>
+  <p>Guess who is coming through town this year!
+    djcdkls jvokjhj skvnkwasdkfdskcmv ncx,m sxcdkjnxjszncdmnsjcndfjnvfmdmkvmdfnkjgndfmnbvjdfjv,cvbgvcxzc zcxzkxchxbzlkjhcbxksdhjsaksjdbhjkladjhgvxdfgxhjkdmcfnjdxncvjxbhv bxhcvb chxbvgxcg
+  </p>
+</div>
+
+<div id="AboutUs" class="tabcontent">
+  <center><h3 style="font-family: Garmond, cursive;">About Us</h3></center>
+
+
+  <p>Qhanna Gooden</p>
+
+<p>My name is Qhanna Gooden and I am 17 years old. I am a senior at  John Bowne High School. The summer before senior year i attended Girls Who Code at Weight Watchers. There I learned scratch,python,json and arduino. As our final project Anneke, Smruthi and I decided to make a website that would show what's happening in the world today. All over the world and not just in our backyard. We believe that this website will give people a better chance to access information about what's going on in the world. Without bias os lies. We hope that you all enjoy our little project and hopefully the more to come. </p>
+
+<p> Smruthi Srinivasan</p>
+
+<p>My name is Smruthi Srinivasan and I live in Edison, New Jersey. I am a rising senior who attends John P. Stevens High School. I am part of Girls Who Code and enjoy computer science and coding. Some of my hobbies include dance and playing the electronic keyboard. I enjoyed making this website with my team and we hope that it raises more awareness about local and global issues as well as makes it easier to access news from different sources!</p>
+
+<p> Anneke Minott</p>
+
+<p>Who are you, who am I?
+I am a moderate genius. From where nature, it’s beauty shines despite the corruption that accumulates inside and before I die I want to be remembered as I am, not as you think I am. Remember my strengths and weaknesses because they shape the person you see that I am.
+I am Jamaican, African and European. My ancestors lives inside my blood. The pain and the cruelty that these people express or go through do not eliminate me because I am proud of having been created thanks to them. Music is inside me, Poetry reveals one side of me, nobody nor I know about. On the beach, there is a lot of happiness that invades my body, that joy brings me back to the land, I place my heart.
+Everything is magical and adventurous, Everything is a gift and a reason of why we are still alive and live every day as a new beginning. And everything, like the ocean, has countless new trips to be discovered. Before leaving this world, I want to be free of all the burdens that holds me underwater, making it impossible to breathe.
+The words I want to convey to everyone, I am my own individual, and you are your own person. We all have our purpose. Know what life means to you and what you want to get out of it, once you know that, pursue that dream and never let it go until it's time.</p>
+
+<p> Thank you for taking the time to check out our website. We hope that you enjoy our website and that you find all the information enlightening. Girls who code taught us a lot about coding and we hope to further our knowledge in college. So thank You GWC for showing us the path to programming, we couldn't have done it without you, so thank you.</p>
+
+ <p> Sincerely  Anneke. Smruthi and Qhanna.</p>
+
+<p>If you have any questions about the conceptualization and completion of this project we can be contacted at the emails on the bottom of the screen.</p>
+
+<p>Contact
+qhannag@gmail.com   annekemlnott@gmail.com     mail2smruthi@gmail.com </p>
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+
+<footer>
+  Thank you
+</footer>
+</html>

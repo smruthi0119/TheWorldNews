@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="final.js" type="text/javascript"></script>
+  <script src="countrytest.js" type="text/javascript"></script>
+  <!-- <link href="finalproject.js" rel="finalproject" type="text/js"> -->
+  <link rel="stylesheet1" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet1.css">
+  <meta name="viewport" content="width=device-width, intial-scale=1">
+
+
+</head>
+
+<body bgcolor="#F0F8FF">
+<div id="TheWorldNews" class= "tab">
+<h2 <align="right":></h2>
+<p style=font-size:"40px;"> The World News <img src="global.jpg", width="50", height="50"></p>
+
+</div>
+
+<div id="Tabs">
+<div class="tab">
+<button class="tablinks" onclick="openhome()">Home Page</button>
+<button class="tablinks" onclick="openlocal()">Local News</button>
+<button class="tablinks" onclick="openglobal()">Global News</button>
+<button class="tablinks" onclick="openweather()">Weather</button>
+<button class="tablinks" onclick="openEnter()">Entertainment</button>
+<button class="tablinks" onclick="openAboutUs()">About Us</button>
+</div>
+</div>
+
+<body>
+  <div id="Home">
+  <center><h3> HIGHLIGHTS (TOP TRENDS):</h3></center>
+</div>
+  <button id="btn" onclick="loaduk(); loadaus(); laodindia()">
+    <script type="text/javascript">
+    document.getElementById("btn").click();
+    </script>
+  <!-- <div id="demo1">
+  <button onclick="loadglobal()">Get News</button>
+  </div> -->
+
+
+
+  <!-- <style>
+  div{
+    display:none;
+  }
+  </style> -->
+  <!-- <button onclick="hide()">hide</button> -->
+
+  <script>
+  function openhome() {
+    window.location.href="index.html";
+  }
+  function openglobal() {
+    window.location.href="GlobalNews.html";
+  }
+    function openlocal() {
+      window.location.href="LocalNews.html";
+    }
+      function openweather() {
+        window.location.href="Weather.html";
+      }
+      function openEnter() {
+        window.location.href="Enter.html";
+  }
+        function openAboutUs() {
+          window.location.href="AboutUs.html";
+  }
+    // var i, tabcontent, tablinks;
+    // tabcontent = document.getElementsByClassName("tabcontent");
+    // for (i = 0; i < tabcontent.length; i++) {
+    //   tabcontent[i].style.display = "none";
+    // }
+    // tablinks = document.getElementsByClassName("tablinks");
+    // for (i = 0; i < tablinks.length; i++) {
+    //   tablinks[i].className = tablinks[i].className.replace(" active", "");
+    // }
+    // document.getElementById(cityName).style.display = "block";
+    // evt.currentTarget.className += " active";
+  </script>
+</body>
+</html>

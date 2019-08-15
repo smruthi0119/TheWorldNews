@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <script src="updated.js" type="text/javascript"></script>
+  <script src="countrytest.js" type="text/javascript"></script>
+  <!-- <link href="finalproject.js" rel="finalproject" type="text/js"> -->
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <meta name="viewport" content="width=device-width, intial-scale=1">
+
+</head>
+
+
+<body bgcolor="#F0F8FF">
+<div id="TheWorldNews" class= "tab">
+<h2 style="text-align: center;"> The World News</h2>
+</div>
+
+<div id="Tabs">
+<div class="tab">
+<button class="tablinks" onclick="openhome()">Home Page</button>
+<button class="tablinks" onclick="openlocal()">Local News</button>
+<button class="tablinks" onclick="openglobal()">Global News</button>
+<button class="tablinks" onclick="openweather()">Weather</button>
+<button class="tablinks" onclick="openEnter()">Entertainment</button>
+<button class="tablinks" onclick="openAboutUs()">About Us</button>
+</div>
+</div>
+
+<body>
+<div id="Weather">
+  <center><h3 style=font-family="Jaz LET, cursive;">Weather</h3></center>
+  <p><b>How is the climate today?</b></p>
+
+</div>
+      <p>
+        <a class="weatherwidget-io" href="https://forecast7.com/en/40d71n74d01/new-york/?unit=us" data-label_1="NEW YORK" data-label_2="WEATHER" data-theme="original" >NEW YORK WEATHER</a>
+      <script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+      </script>
+      </p>
+      <!-- paris -->
+      <p>
+      <a class="weatherwidget-io" href="https://forecast7.com/en/48d862d35/paris/?unit=us" data-label_1="PARIS" data-label_2="WEATHER" data-theme="original" >PARIS WEATHER</a>
+      <script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+      </script>
+      </p>
+      <!-- sydny -->
+      <p>
+      <a class="weatherwidget-io" href="https://forecast7.com/en/n33d87151d21/sydney/?unit=us" data-label_1="SYDNEY" data-label_2="WEATHER" data-theme="original" >SYDNEY WEATHER</a>
+      <script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+      </script>
+      </p>
+      <!-- california  -->
+      <p>
+      <a class="weatherwidget-io" href="https://forecast7.com/en/36d78n119d42/california/?unit=us" data-label_1="CALIFORNIA" data-label_2="WEATHER" data-theme="original" >CALIFORNIA WEATHER</a>
+      <script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+      </script>
+      </p>
+      <!-- barcelona  -->
+      <p>
+      <a class="weatherwidget-io" href="https://forecast7.com/en/41d392d17/barcelona/?unit=us" data-label_1="BARCELONA" data-label_2="WEATHER" data-theme="original" >BARCELONA WEATHER</a>
+      <script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+      </script>
+      </p>
+      <!-- hong kong  -->
+      <p>
+        <a class="weatherwidget-io" href="https://forecast7.com/en/22d40114d11/hong-kong/?unit=us" data-label_1="HONG KONG" data-label_2="WEATHER" data-theme="original" >HONG KONG WEATHER</a>
+        <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
+      </p>
+      <!-- tokyo -->
+      <p>
+        <a class="weatherwidget-io" href="https://forecast7.com/en/35d69139d69/tokyo/?unit=us" data-label_1="TOKYO" data-label_2="WEATHER" data-theme="original" >TOKYO WEATHER</a>
+        <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
+      </p>
+  </div>
+
+</p>
+
+<script>
+  function openhome() {
+    window.location.href="index.html";
+  }
+  function openglobal() {
+    window.location.href="GlobalNews.html";
+  }
+    function openlocal() {
+      window.location.href="LocalNews.html";
+    }
+      function openweather() {
+        window.location.href="Weather.html";
+      }
+      function openEnter() {
+        window.location.href="Enter.html";
+  }
+        function openAboutUs() {
+          window.location.href="AboutUs.html";
+  }
+    // var i, tabcontent, tablinks;
+    // tabcontent = document.getElementsByClassName("tabcontent");
+    // for (i = 0; i < tabcontent.length; i++) {
+    //   tabcontent[i].style.display = "none";
+    // }
+    // tablinks = document.getElementsByClassName("tablinks");
+    // for (i = 0; i < tablinks.length; i++) {
+    //   tablinks[i].className = tablinks[i].className.replace(" active", "");
+    // }
+    // document.getElementById(cityName).style.display = "block";
+    // evt.currentTarget.className += " active";
+  </script>
+</body>
+</html>
