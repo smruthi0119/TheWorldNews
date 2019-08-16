@@ -135,7 +135,7 @@ p.exl {
   text-align: center;
   letter-spacing: 3px;
   word-spacing: 10px;
-  background-image: url("globalbackground.jpg")
+  /*background-image: url("globalbackground.jpg")*/s
 }
 
 #Weather {
